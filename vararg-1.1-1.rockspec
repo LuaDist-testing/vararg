@@ -1,9 +1,17 @@
+-- This file was automatically generated for the LuaDist project.
+
 package="vararg"
-version="1.0-1"
+version="1.1-1"
+-- LuaDist source
 source = {
-   url = "https://github.com/moteus/lua-vararg/archive/v1.0.zip",
-   dir = "lua-vararg-1.0",
+  tag = "1.1-1",
+  url = "git://github.com/LuaDist-testing/vararg.git"
 }
+-- Original source
+-- source = {
+--    url = "https://github.com/moteus/lua-vararg/archive/v1.1.zip",
+--    dir = "lua-vararg-1.1",
+-- }
 description = {
    summary = "Manipulation of variable arguments",
    detailed = [[
