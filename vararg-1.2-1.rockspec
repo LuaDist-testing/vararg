@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package="vararg"
-version="1.1-1"
+version="1.2-1"
 -- LuaDist source
 source = {
-  tag = "1.1-1",
+  tag = "1.2-1",
   url = "git://github.com/LuaDist-testing/vararg.git"
 }
 -- Original source
 -- source = {
---    url = "https://github.com/moteus/lua-vararg/archive/v1.1.zip",
---    dir = "lua-vararg-1.1",
+--    url = "https://github.com/moteus/lua-vararg/archive/v1.2.zip",
+--    dir = "lua-vararg-1.2",
 -- }
 description = {
    summary = "Manipulation of variable arguments",
@@ -23,15 +23,13 @@ description = {
    license = "MIT/X11"
 }
 dependencies = {
-   "lua >= 5.1"
+   "lua >= 5.1, < 5.4"
 }
 
 build = {
-   copy_directories = {},
+   copy_directories = {"test"},
    type = "builtin",
    modules = {
-      vararg = {
-         sources = "vararg.c",
-      },
+      vararg = "vararg.c"
    },
 }
